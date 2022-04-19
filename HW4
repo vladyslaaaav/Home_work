@@ -1,0 +1,22 @@
+vowels = {'a', 'o', 'y', 'i, 'u'', 'e', 'A', 'O', 'Y', 'I', 'U', 'E'}
+my_name = 'I am Vlad'
+
+for i in my_name:
+   if i in vowels:
+       print(i)
+
+
+lower_price = [19.7]
+upper_price = [16.3]
+
+shops = {'silpo': 16.7,
+         'kopiika': 15.9,
+         'atb': 18.4,
+         'trash': 20.1,
+         'metro': 17.2,
+         'aushan': 16.1
+}
+for i in shops.items():
+    print(i)
+
+
