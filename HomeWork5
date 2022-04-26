@@ -12,47 +12,6 @@ def number(a):
 print(number())
 
 
-
-
-#Напишіть функцію, що приймає два аргументи. Функція повинна
-#якщо аргументи відносяться до числових типів - повернути різницю цих аргументів,
-
-def ages(Bob, James):
-
-    minus = Bob - James
-
-    return minus
-
-print(ages(33, 22))
-
-#якщо обидва аргументи це строки - обʼєднати в одну строку та повернути
-
-def car(make, model):
-
-    name = make + model
-
-    return name
-
-print(car('Kia', '_Cerato'))
-
-#якщо перший строка, а другий ні - повернути dict де ключ це перший аргумент, а значення - другий
-
-def date(month, day):
-
-    return {month: day}
-
-print(date('April', 20))
-
-
-#у будь-якому іншому випадку повернути кортеж з цих аргументів
-
-def food(fruit, vegetable, snack):
-
-    name = (fruit, vegetable, snack)
-
-    return name
-
-print(food('apple', 'potato', 'chips'))
 #Напишіть функцію, що приймає один аргумант. Функція має вивести на ектан тип цього аргумента (використовуйте type)
 
 def myself(name):
@@ -60,3 +19,21 @@ def myself(name):
     print(type(name))
 
 myself('Vlad')
+
+
+def message(a, b):
+    if isinstance(a, int) and isinstance(b, int) or isinstance(a, float) and isinstance(b, float):
+        result = a - b
+    elif isinstance(a, str) and isinstance(b, str):
+        result = a + b
+    elif isinstance(a, str) and isinstance(b, int):
+        result = {a: b}
+    else:
+        result = (a, b)
+    return result
+
+print(message(12, 7))
+
+
+
+
